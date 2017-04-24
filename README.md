@@ -1,6 +1,6 @@
 # Python-Book
 
-![py35][py35] 
+[![PyPI](https://img.shields.io/pypi/pyversions/Django.svg)]()
 
 Python 知识整理
 

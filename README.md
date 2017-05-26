@@ -1,7 +1,5 @@
 # Python-Book
 
-[![PyPI](https://img.shields.io/pypi/pyversions/Django.svg)]()
-
 Python 知识整理
 
 大致分为两个部分，一是 Python 基础的梳理，二是对应着梳理出来的知识点，整理一些示例代码。

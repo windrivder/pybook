@@ -6,4 +6,4 @@ Python 知识整理
 
 代码请详见[这里](https://github.com/Windrivder/PyBook)
 
-在线阅读: [PyBook](https://python.windrivder.me)
+在线阅读: [PyBook](http://python.windrivder.me)

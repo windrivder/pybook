@@ -12,12 +12,13 @@ __author__ = 'Windrivder'
 
 from random import randint
 
+
 def bubble_sort(List):
     n = len(List)
     for i in range(n):
-        for j in range(1, n-i):
-            if List[j-1] > List[j]:
-                List[j-1], List[j] = List[j], List[j-1]
+        for j in range(1, n - i):
+            if List[j - 1] > List[j]:
+                List[j - 1], List[j] = List[j], List[j - 1]
     return List
 
 
@@ -25,9 +26,9 @@ def bubble_sort_back(List):
     n = len(List)
     for i in range(n):
         flag = True
-        for j in range(n-2, -1, -1):
-            if List[j] > List[j+1]:
-                List[j+1], List[j] = List[j], List[j+1]
+        for j in range(n - 2, -1, -1):
+            if List[j] > List[j + 1]:
+                List[j + 1], List[j] = List[j], List[j + 1]
                 flag = False
         if flag:
             break
@@ -39,8 +40,8 @@ def bubble_sort_flag(List):
     for i in range(n):
         flag = True
         for j in range(1, p):   # 遍历到最后发生数据交换的位置
-            if  List[j-1] > List[j]:
-                List[j-1], List[j] = List[j], List[j-1]
+            if List[j - 1] > List[j]:
+                List[j - 1], List[j] = List[j], List[j - 1]
                 p = j   # 记录最后发生数据交换的位置
                 flag = False
         if flag:

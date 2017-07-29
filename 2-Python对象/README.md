@@ -13,7 +13,7 @@ In [2]: def sorted_list(olist, key=None):
    ...:     copied_list = copy.copy(olist)
    ...:     copied_list.sort(key=key)
    ...:     return copied_list
-   ...: 
+   ...:
 
 In [3]: a = [3, 5, 2, 6, 1]
 
@@ -63,7 +63,7 @@ In [1]: class CopyObj(object):
    ...:         return 'Hello'
    ...:     def __copy__(self):
    ...:         return 'World'
-   ...:     
+   ...:
 
 In [2]: obj = CopyObj()
 
@@ -87,14 +87,14 @@ In [2]: if type(num) is int:
    ...:     print('num is Integer')
    ...: else:
    ...:     print('num is not Integer')
-   ...:     
+   ...:
 num is Integer
 
 In [3]: if isinstance(num, int):	# 推荐
    ...:     print('num is Integer')
    ...: else:
    ...:     pass
-   ...: 
+   ...:
 num is Integer
 ```
 
@@ -109,7 +109,7 @@ num is Integer
 |  类型  | False             | True                               |
 | :--: | :---------------- | :--------------------------------- |
 |  布尔  | False （与0等价）      | True （与1等价）                        |
-| 字符串  | ""（ 空字符串）         | 非空字符串，例如 " ", "blog"               |
+| 字符串  | ""（空字符串）         | 非空字符串，例如 " ", "blog"               |
 |  数值  | 0, 0.0            | 非0的数值，例如：1, 0.1, -1, 2             |
 |  容器  | [], (), {}, set() | 至少有一个元素的容器对象，例如：[0], (None,), [''] |
 | None | None              | 非None对象                            |
@@ -129,14 +129,14 @@ In [5]: if L is not None:
    ...:     print('L is {}'.format(L))
    ...: else:
    ...:     print('L is empty')
-   ...:     
+   ...:
 L is []
 
 In [6]: if L:	#3 正确的判断形式
    ...:     print('Do something...')
    ...: else:
    ...:     print('Do other thing...')
-   ...:     
+   ...:
 Do other thing...
 ```
 

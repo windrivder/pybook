@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>PyBook - Windrivder</title>
+  <meta name="description" content="Description">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css">
+  <!--<link rel="stylesheet" href="//unpkg.com/docsify/themes/buble.css">-->
+  <!--<link rel="stylesheet" href="//unpkg.com/docsify/themes/dark.css">-->
+  <!--<link rel="stylesheet" href="//unpkg.com/docsify/themes/pure.css">-->
+</head>
+
+<body>
+  <div id="app">加载中</div>
+</body>
+<script>
+  window.$docsify = {
+    name: 'Windrivder',
+    nameLink: 'http://www.windrivder.me',
+    repo: 'http://github.com/Windrivder/PyBook',
+    loadSidebar: true,
+    autoHeader: true,
+    subMaxLevel: 2,
+    loadNavbar: true,
+    coverpage: true,
+    auto2top: true,
+    mergeNavbar: true,
+    search: {
+      maxAge: 86400000,
+      placeholder: '搜索',
+      noData: '找不到结果'
+    },
+    ga: "UA-102236848-1",
+    // plugins: [
+    //   function(hook) {
+    //     var footer = [
+    //       '<hr/>',
+    //       '<footer>',
+    //       '<span><a href="https://github.com/Windrivder">Windrivder</a> &copy;2017.</span>',
+    //       '<span>Proudly published with <a href="https://github.com/QingWei-Li/docsify" target="_blank">docsify</a>.</span>',
+    //       '</footer>'
+    //     ].join('')
+
+    //     hook.afterEach(function(html) {
+    //       return html + footer
+    //     })
+    //   }
+    // ]
+    // plugins: [
+    //   function(hook, vm) {
+    //     hook.beforeEach(function(html) {
+    //       var url = 'https://github.com/Windrivder/PyBook/blob/master' + vm.route.file
+    //       var editHtml = '[📝 EDIT DOCUMENT](' + url + ')\n'
+
+    //       return editHtml +
+    //         html +
+    //         '\n----\n' +
+    //         'Last modified 07/09 10:48 ' +
+    //         editHtml
+    //     })
+    //   }
+    // ]
+  }
+</script>
+
+<script>
+  if (typeof navigator.serviceWorker !== 'undefined') {
+    navigator.serviceWorker.register('sw.js')
+  }
+</script>
+
+<script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
+<script src="//unpkg.com/docsify/lib/plugins/search.js"></script>
+<script src="//unpkg.com/docsify/lib/plugins/ga.js"></script>
+<script src="//unpkg.com/docsify/lib/plugins/emoji.js"></script>
+<script src="//unpkg.com/docsify/lib/plugins/zoom-image.js"></script>
+<script src="//unpkg.com/prismjs/components/prism-python.min.js"></script>
+<script src="//unpkg.com/prismjs/components/prism-css.min.js"></script>
+<script src="//unpkg.com/prismjs/components/prism-javascript.min.js"></script>
+<script src="//unpkg.com/prismjs/components/prism-json.min.js"></script>
+<script src="//unpkg.com/prismjs/components/prism-sql.min.js"></script>
+<script src="//unpkg.com/vue"></script>
+
+</html>

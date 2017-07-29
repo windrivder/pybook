@@ -12,11 +12,12 @@ __author__ = 'Windrivder'
 
 from random import randint
 
+
 def selection_sort(List):
     n = len(List)
     for i in range(n):
         min_index = i
-        for j in range(i+1, n):
+        for j in range(i + 1, n):
             if List[j] < List[min_index]:
                 min_index = j
         List[min_index], List[i] = List[i], List[min_index]

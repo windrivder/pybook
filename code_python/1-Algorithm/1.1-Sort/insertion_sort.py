@@ -12,15 +12,16 @@ __author__ = 'Windrivder'
 
 from random import randint
 
+
 def insertion_sort(List):
     n = len(List)
     for i in range(1, n):
-        if List[i] < List[i-1]:
+        if List[i] < List[i - 1]:
             temp = List[i]
             index = i
-            for j in range(i-1, -1, -1):
+            for j in range(i - 1, -1, -1):
                 if List[j] > temp:
-                    List[j+1] = List[j]
+                    List[j + 1] = List[j]
                     index = j
                 else:
                     break
@@ -28,14 +29,14 @@ def insertion_sort(List):
     return List
 
 
-def insertion_sort_bisect(List):  
-    n = len(List)  
-    for i in range(1, n):  
-        temp = List[i]  
-        for j in range(i+1, -1, -1):  
-            if j>0 and temp < List[j-1]:  
-                List[j] = List[j-1]  
-                List[j-1] = temp  
+def insertion_sort_bisect(List):
+    n = len(List)
+    for i in range(1, n):
+        temp = List[i]
+        for j in range(i + 1, -1, -1):
+            if j > 0 and temp < List[j - 1]:
+                List[j] = List[j - 1]
+                List[j - 1] = temp
     return List
 
 

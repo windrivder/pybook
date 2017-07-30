@@ -41,8 +41,8 @@ nosetests.xml
 # Virtual environment
 venv
 
-# Farbox
-_image
+# Mac
+.DS_Store
 
 # Fabfile
 fabfile.py

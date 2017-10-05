@@ -1,5 +1,5 @@
 #/usr/bin/env python
-# coding=utf-8
+# -*- coding: utf-8 -*-
 
 '''from: http://www.dongwm.com/archives/pythonban-ge-ren-jian-li/'''
 
@@ -59,21 +59,21 @@ class Resume(object):
     @colorprint('个人信息')
     def personal_information(self):
         return {
-                'Name': '董伟明',
-                'Gender': 'Male',
-                'Born': [1985, 8, 9],
-                'Education': {
+            'Name': '董伟明',
+            'Gender': 'Male',
+            'Born': [1985, 8, 9],
+            'Education': {
                     'School Name': '保定科技职业学院',
                     'Major': '烹饪工艺与营养',
                     'Degree': 'Three-year college',
                     'Graduation': 2009
-                    },
-                'QQ': '6196622X',
-                'Tel': '13552651XXX',
-                'Email': 'XX@gmail.com',
-                'Target Positions': re.compile(
-                    "'Python Developer'|DevOps", re.I | re.M).pattern
-                }
+            },
+            'QQ': '6196622X',
+            'Tel': '13552651XXX',
+            'Email': 'XX@gmail.com',
+            'Target Positions': re.compile(
+                "'Python Developer'|DevOps", re.I | re.M).pattern
+        }
 
     @property
     @colorprint('个人特点')
@@ -90,23 +90,23 @@ class Resume(object):
     @colorprint('个人能力')
     def skills(self):
         return {
-                'Language': {
-                    '熟悉': ['Python', 'Ruby', 'Bash'],
-                    '了解': ['Haskell', 'Lisp', 'Erlang']},
-                'OS': ['Gentoo', 'Debian', 'Centos/Rhel', 'Opensuse'],
-                'Tool': ['Vim', 'Mercurial', 'Git'],
-                'Databaseandtools': ['MySQL',
-                    'PostgreSQL', 'MongoDB', 'Redis', 'Memcached', 'SQLAlchemy'],
-                'WebFramework': {
-                    '熟悉': ['Tornado', 'Django', 'Gae'],
-                    '了解': ['Flask']
-                    },
-                'OtherFramework': ['Twisted', 'gevent',
-                    'stackless', 'scrapy', 'mechanize'],
-                'GUI': 'pyqt',
-                'Network': 'Cisco Certified Security Professional',
-                'Other': '给Gentoo和Centos提交过bug'
-                }
+            'Language': {
+                '熟悉': ['Python', 'Ruby', 'Bash'],
+                '了解': ['Haskell', 'Lisp', 'Erlang']},
+            'OS': ['Gentoo', 'Debian', 'Centos/Rhel', 'Opensuse'],
+            'Tool': ['Vim', 'Mercurial', 'Git'],
+            'Databaseandtools': ['MySQL',
+                                 'PostgreSQL', 'MongoDB', 'Redis', 'Memcached', 'SQLAlchemy'],
+            'WebFramework': {
+                '熟悉': ['Tornado', 'Django', 'Gae'],
+                '了解': ['Flask']
+            },
+            'OtherFramework': ['Twisted', 'gevent',
+                               'stackless', 'scrapy', 'mechanize'],
+            'GUI': 'pyqt',
+            'Network': 'Cisco Certified Security Professional',
+            'Other': '给Gentoo和Centos提交过bug'
+        }
 
     @property
     @colorprint('工作经验', False)
@@ -116,13 +116,13 @@ class Resume(object):
                 'Time period': '2011.10-2012.08',
                 'Company Name': 'XX（北京）科技有限公司',
                 'Position': '运维开发工程师'
-                },
+            },
             {
                 'Time period': '2009.10-2011.10',
                 'Company Name': 'XX（北京）科技有限公司',
                 'Position': '运维工程师'
-                },
-            ])
+            },
+        ])
 
     @property
     @colorprint('项目经验', False)
@@ -131,24 +131,24 @@ class Resume(object):
             {
                 'Project': 'kvm远程管理系统',
                 'Description': ('前台(django)接手至其它同事并完成维护，'
-                    '后台独立完成，用来创建，修改，删除kvm，查看状态信息等')
-                },
+                                '后台独立完成，用来创建，修改，删除kvm，查看状态信息等')
+            },
             {
                 'Project': 'postfix群发邮件系统',
                 'Description': ('前台(tornado),为其它部门提供发送邮件的web端, '
-                    '并作为数据收集服务端,前后台独立完成')
-                },
+                                '并作为数据收集服务端,前后台独立完成')
+            },
             {
                 'Project': 'windows个人安全终端系统',
                 'Description': ('前后台和接收数据的socket服务器独立完成，'
-                    '客户端图形编程使用qt')
-                },
+                                '客户端图形编程使用qt')
+            },
             {
                 'Project': '地推IDC质量测试系统',
                 'Description': ('还在代码实现中,前台flask, 数据接收服务准备'
-                    '使用twisted,客户端为windows进程')
-                }
-            ])
+                                '使用twisted,客户端为windows进程')
+            }
+        ])
 
     @property
     @colorprint('@Where', False)
@@ -163,12 +163,12 @@ class Resume(object):
             {
                 'Link': 'http://youhouer.appspot.com',
                 'Description': '基于Google App Engine的前端网站'
-                }
-            ])
+            }
+        ])
 
     def show(self):
         prolist = [i for i in dir(self) if not i.startswith('_')
-                    and not i.startswith('personal')]
+                   and not i.startswith('personal')]
         self.personal_information
         for pro in prolist:
             getattr(self, pro)
